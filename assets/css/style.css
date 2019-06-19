@@ -19,11 +19,18 @@ section {
 
 .btn {
     padding: 15px 20px;
+    min-width: 180px;
 }
 
 .btn-primary {
     background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    opacity: .95;
 }
 
 .btn-secondary {
