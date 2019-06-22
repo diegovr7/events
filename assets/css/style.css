@@ -18,7 +18,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-semi-bold) !important;
 }
 
 a:hover {
@@ -34,6 +34,8 @@ section {
 .bg-primary { background-color: var(--primary-color) !important; }
 .bg-light { background-color:  var(--light-color) !important; }
 .bg-grey { background-color: var(--grey-color); }
+
+.active { color: var(--gold-color); }
 
 .btn {
     font-weight: var(--font-semi-bold);
@@ -84,13 +86,42 @@ section {
     box-shadow: none;
 }
 
+.main-photo {
+    max-width: 400px;
+    border: 10px solid var(--light-color);
+    border-radius: 0 0 50px 0;
+}
+
+.static-icons {
+    position: fixed;
+    top: 50vh;
+    right: 10px;
+}
+
+.static-icons li {
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    background-color: var(--gold-color);
+    padding: 20px;
+    font-size: 30px;
+}
+
+.card {
+    transition: all .5s;
+}
+
+.card:hover {
+    box-shadow: 0 15px 30px -12px rgba(50,50,93,.10);
+    transition: all .5s;
+}
+
 .logo-company {
     max-width: 180px;
 }
 
 .profile-img {
     border-radius: 50px;
-    max-width: 50px;
+    max-width: 40px;
 }
 
 footer {
