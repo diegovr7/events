@@ -3,7 +3,6 @@
     --secondary-color: #a19975;
     --light-color: #ffffff;
     --grey-color: #efefef;
-    --gold-color: #a19975;
     --extra-light: rgba(255,255,255,.6);
 
     --font-thin: 200;
@@ -35,7 +34,7 @@ section {
 .bg-light { background-color:  var(--light-color) !important; }
 .bg-grey { background-color: var(--grey-color); }
 
-.active { color: var(--gold-color); }
+.active { color: var(--secondary-color); }
 
 .btn {
     font-weight: var(--font-semi-bold);
@@ -61,7 +60,7 @@ section {
 }
 
 .btn-gold {
-    background-color: var(--gold-color);
+    background-color: var(--secondary-color);
     color: var(--light-color);
 }
 
@@ -78,8 +77,16 @@ section {
     min-height: 80px;
 }
 
+.nav-link {
+    color: var(--light-color);
+}
+
 #hero {
     background-color: var(--primary-color);
+}
+
+#hero i {
+    font-size: 26px;
 }
 
 .form-control:focus {
@@ -87,23 +94,8 @@ section {
 }
 
 .main-photo {
-    max-width: 400px;
     border: 10px solid var(--light-color);
-    border-radius: 0 0 50px 0;
-}
-
-.static-icons {
-    position: fixed;
-    top: 50vh;
-    right: 10px;
-}
-
-.static-icons li {
-    border: 2px solid var(--primary-color);
-    border-radius: 50px;
-    background-color: var(--gold-color);
-    padding: 20px;
-    font-size: 30px;
+    box-shadow: -10px 10px 0 0 var(--secondary-color);
 }
 
 .card {
@@ -150,3 +142,17 @@ footer a:hover {
     color: var(--light-color);
     opacity: .95;
 }
+
+@media (max-width: 575.98px) { 
+    footer {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+@media (min-width: 1200px) { ... }
